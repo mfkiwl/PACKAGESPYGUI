@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Package Ribbonpy configuration &mdash; ribbonpy 0.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="ribbonpy 0.0.0 documentation" href="index.html" />
+    <link rel="prev" title="User knowledges" href="prerequis.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="prerequis.html" title="User knowledges"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ribbonpy 0.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="package-ribbonpy-configuration">
+<span id="configuration"></span><h1>Package Ribbonpy configuration<a class="headerlink" href="#package-ribbonpy-configuration" title="Permalink to this headline">¶</a></h1>
+<p>This package <em>could be</em> a package python, setup.py is not instancied yet, waiting for v1.0.0.</p>
+<p>see <a class="reference external" href="https://python-packaging.readthedocs.org/en/latest/minimal.html">https://python-packaging.readthedocs.org/en/latest/minimal.html</a></p>
+<div class="section" id="get-ribbonpy-package">
+<h2>Get ribbonpy package<a class="headerlink" href="#get-ribbonpy-package" title="Permalink to this headline">¶</a></h2>
+<p>At cea/lgls</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">export</span> <span class="n">MYDIR</span> <span class="o">=</span> <span class="sb">`pwd`</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">git</span> <span class="n">clone</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">matix</span><span class="o">/</span><span class="n">GitRepo</span><span class="o">/</span><span class="n">ribbonpy</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="initialise-environment">
+<h2>Initialise environment<a class="headerlink" href="#initialise-environment" title="Permalink to this headline">¶</a></h2>
+<p>set variable PYTHONPATH</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt;&gt;&gt; cd $MYDIR/ribbonpy
+&gt;&gt;&gt; export PYTHONPATH=`pwd`:$PYTHONPATH
+</pre></div>
+</div>
+</div>
+<div class="section" id="view-some-ribbon-widget-example">
+<h2>View some ribbon widget example<a class="headerlink" href="#view-some-ribbon-widget-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre>&gt;&gt;&gt; cd $MYDIR/ribbonpy/ribbonpy
+&gt;&gt;&gt; ribbonWidget.py
+&gt;&gt;&gt; ribbonQMainWindow.py
+</pre></div>
+</div>
+<p>Why <em>ribbonpy/ribbonpy</em> ?: the answer is funniest...</p>
+<p>see <a class="reference external" href="https://python-packaging.readthedocs.org/en/latest/minimal.html">https://python-packaging.readthedocs.org/en/latest/minimal.html</a></p>
+</div>
+<div class="section" id="launch-all-tests">
+<h2>Launch all tests<a class="headerlink" href="#launch-all-tests" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre>&gt;&gt;&gt; cd $MYDIR/ribbonpy
+&gt;&gt;&gt; AllTestLauncher
+</pre></div>
+</div>
+<p>If binding PyQt4, and more tricks
+see file $MYDIR/ribbonpy/README_ribbon.txt</p>
+</div>
+<div class="section" id="faq-in-code">
+<h2>FAQ In Code<a class="headerlink" href="#faq-in-code" title="Permalink to this headline">¶</a></h2>
+<p>Is a programmer FAQ, not a python newbie FAQ.</p>
+<p>For a prototype implementation, often modified,
+this packages uses a <em>Frequently Asked Questions In Code</em> method.
+Questions <em>are</em> in the source files code,
+found with a special tag, only one line by question.
+Answers are obviously below question, as comment, <em>or</em> as code itself.
+An indice allow to sort question as a list.
+In <em>future</em>, automatic dynamic links could be generated in html documentation.</p>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<p>User can reach questions (and answers) in kate with &#8220;Find In File&#8221; string &#8220;#FAQ &#8220;</p>
+<p>Another way, the user could type in a console a grep-sort command:</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt;&gt;&gt; cd $MYDIR/ribbonpy
+&gt;&gt;&gt; find . -name &quot;*.py&quot; -exec grep -Hni &quot;#FAQ &quot; {} \; | sort -n -k 2.2
+</pre></div>
+</div>
+<p>A python script exists for EZ better listing format:</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt;&gt;&gt; cd $MYDIR/ribbonpy
+&gt;&gt;&gt; ./faqic
+</pre></div>
+</div>
+<p>Display the questions, obtain link to reach answer, which is obviously below the tag in file.</p>
+</div>
+<div class="section" id="tags-numerotation">
+<h3>Tags Numerotation<a class="headerlink" href="#tags-numerotation" title="Permalink to this headline">¶</a></h3>
+<p>0000 to 9999, is a convention:</p>
+<ul class="simple">
+<li>0000-0999  user choice, pertinent question</li>
+<li>1000-2999  methods</li>
+<li>3000-3900  classes</li>
+<li>4000-5900  annexes, not really pertinent</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="this-documentation-configuration">
+<h1>This Documentation configuration<a class="headerlink" href="#this-documentation-configuration" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fichier-sphinx-conf-py">
+<h2>Fichier Sphinx conf.py<a class="headerlink" href="#fichier-sphinx-conf-py" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Sphinx generates html files from initial configuration file</dt>
+<dd><a class="reference external" href="../../source/conf.py">../../source/conf.py</a>. and .rst files in <a class="reference external" href="../../source">../../source</a>/</dd>
+</dl>
+</div>
+<div class="section" id="other-existing-themes">
+<h2>Other existing themes<a class="headerlink" href="#other-existing-themes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>agogo</li>
+<li>bizstyle</li>
+<li>classic</li>
+<li>epub</li>
+<li>haiku</li>
+<li>nature</li>
+<li>pyramid</li>
+<li>scrolls</li>
+<li>sphinxdoc</li>
+<li>traditional</li>
+</ul>
+<p>see <a class="reference external" href="http://sphinx-doc.org/theming.html#builtin-themes">http://sphinx-doc.org/theming.html#builtin-themes</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Package Ribbonpy configuration</a><ul>
+<li><a class="reference internal" href="#get-ribbonpy-package">Get ribbonpy package</a></li>
+<li><a class="reference internal" href="#initialise-environment">Initialise environment</a></li>
+<li><a class="reference internal" href="#view-some-ribbon-widget-example">View some ribbon widget example</a></li>
+<li><a class="reference internal" href="#launch-all-tests">Launch all tests</a></li>
+<li><a class="reference internal" href="#faq-in-code">FAQ In Code</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#tags-numerotation">Tags Numerotation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#this-documentation-configuration">This Documentation configuration</a><ul>
+<li><a class="reference internal" href="#fichier-sphinx-conf-py">Fichier Sphinx conf.py</a></li>
+<li><a class="reference internal" href="#other-existing-themes">Other existing themes</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="prerequis.html"
+                        title="previous chapter">User knowledges</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/configuration.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="prerequis.html" title="User knowledges"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ribbonpy 0.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, CEA DEN/DANS/DM2S/STMF/LGLS.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>
