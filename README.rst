@@ -4,7 +4,7 @@ Packagespy
 
 Packagespy est une bibliothèque python développée au `CEA <https://www.cea.fr>`_ permettant la création d'interfaces graphiques. Elle est basé sur le design du `Model-View-Controller <https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_.
 Le *Model* est une structure de donnée de type Arbre où les feuilles contiennent les valeurs.
-(Chaque partie est normalement indépendante et ne peut pas agir directement sur l'autre. Ainsi, elle communique à l'aide de request au coeur de l'`API https://en.wikipedia.org/wiki/API`)
+(Chaque partie est normalement indépendante et ne peut pas agir directement sur l'autre. Ainsi, elle communique à l'aide de request au coeur de l'`API https://en.wikipedia.org/wiki/API`_)
 
 *View*
 --------------------
@@ -99,7 +99,7 @@ CLFX.appendAllXyzClasses() est une méthode qui permet d'informer n'importe quel
 ------------
 
 Le *Controller* est la partie du code qui va gérer les interactions entre le *Model* en mémoire et les actions de l'utilisateur sur la fenêtre ainsi que celles avec le code sur lequel la `GUI <https://en.wikipedia.org/wiki/Graphical_user_interface>` s'appuie.
-Il faut donc créer des signaux `PyQt5 <https://pypi.org/project/PyQt5>` qui vont ensuite pouvoir être interceptés lorsque l'utilisateur va faire des actions sur la `GUI <https://en.wikipedia.org/wiki/Graphical_user_interface>` pour pouvoir répondre en conséquence.
+Il faut donc créer des signaux `PyQt5 <https://pypi.org/project/PyQt5>`_ qui vont ensuite pouvoir être interceptés lorsque l'utilisateur va faire des actions sur la `GUI <https://en.wikipedia.org/wiki/Graphical_user_interface>`_ pour pouvoir répondre en conséquence.
 
 .. code-block:: python
 
