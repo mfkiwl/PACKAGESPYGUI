@@ -4,12 +4,12 @@ Packagespy
 
 Packagespy est une bibliothèque python développée au `CEA <https://www.cea.fr>`_ permettant la création d'interfaces graphiques. Elle est basé sur le design du `Model-View-Controller <https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_.
 Le *Model* est une structure de donnée de type Arbre où les feuilles contiennent les valeurs.
-(Chaque partie est normalement indépendante et ne peut pas agir directement sur l'autre. Ainsi, elle communique à l'aide de request au coeur de l'api)
+(Chaque partie est normalement indépendante et ne peut pas agir directement sur l'autre. Ainsi, elle communique à l'aide de request au coeur de l'`API https://en.wikipedia.org/wiki/API`)
 
 *View*
 --------------------
 
-Packagespy a d'abord été pensé pour une disposition graphique spécifique et est basé sur PyQt5. Un arbre (TREEVIEW) dans le dock de gauche, un barre d'action (TOOLBAR) dans le dock du haut et une fenêtre centrale pour afficher du contenu.
+Packagespy a d'abord été pensé pour une disposition graphique spécifique et est basé sur `PyQt5 <https://pypi.org/project/PyQt5>`. Un arbre (TREEVIEW) dans le dock de gauche, un barre d'action (TOOLBAR) dans le dock du haut et une fenêtre centrale pour afficher du contenu.
 La classe TreeXmlXyz peut être directement instanciée et utilisera donc des réglages par defaut.
 On peut aussi la dériver et créer un affichage spécifique pour une application. 
 
@@ -98,8 +98,8 @@ CLFX.appendAllXyzClasses() est une méthode qui permet d'informer n'importe quel
 *Controller*
 ------------
 
-Le *Controller* est la partie du code qui va gérer les interactions entre le *Model* en mémoire et les actions de l'utilisateur sur la fenêtre ainsi que celles avec le code sur lequel la GUI s'appuie.
-Il faut donc créer des signaux PyQt qui vont ensuite pouvoir être interceptés lorsque l'utilisateur va faire des actions sur la GUI pour pouvoir répondre en conséquence.
+Le *Controller* est la partie du code qui va gérer les interactions entre le *Model* en mémoire et les actions de l'utilisateur sur la fenêtre ainsi que celles avec le code sur lequel la `GUI <https://en.wikipedia.org/wiki/Graphical_user_interface>` s'appuie.
+Il faut donc créer des signaux `PyQt5 <https://pypi.org/project/PyQt5>` qui vont ensuite pouvoir être interceptés lorsque l'utilisateur va faire des actions sur la `GUI <https://en.wikipedia.org/wiki/Graphical_user_interface>` pour pouvoir répondre en conséquence.
 
 .. code-block:: python
 
